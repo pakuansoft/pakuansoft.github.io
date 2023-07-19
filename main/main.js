@@ -41,7 +41,7 @@ const main = {
             </div>
           </footer>
         </header>
-        <div id="main">
+        <div id="main" style={{ background: "black" }}>
           <section id="one">
             <header className="major">
               <h2>
