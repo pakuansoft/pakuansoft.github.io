@@ -8,11 +8,7 @@ const main = {
               <img src="theme/html5up-strata/images/avatar.jpg" alt="" />
             </a>
             <h1>
-              <strong>Pakuansoft</strong>, a super simple
-              <br />
-              responsive site template freebie
-              <br />
-              crafted by <a href="http://html5up.net">HTML5 UP</a>.
+              <strong>Pakuansoft</strong> Konsultan IT di Bogor.
             </h1>
           </div>
           <footer id="footer">
