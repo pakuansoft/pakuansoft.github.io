@@ -2,35 +2,54 @@ const main = {
   view: () => {
     return (
       <div>
-        <header id="header">
+        <header
+          id="header"
+          style={{ backgroundImage: "none", backgroundColor: "rgb(7 67 70)" }}
+        >
           <div className="inner">
             <a href="#" className="image avatar">
-              <img src="theme/html5up-strata/images/avatar.jpg" alt="" />
+              <img src="image/logo.jpg" alt="" />
             </a>
             <h1>
-              <strong>Pakuansoft</strong> Konsultan IT di Bogor.
+              <strong>Pakuansoft</strong> Digitalisasikan semua.
             </h1>
           </div>
           <footer id="footer">
             <div className="inner">
               <ul className="icons">
-                <li>
+                <li style={{ display: "none" }}>
                   <a href="#" className="icon brands fa-twitter">
                     <span className="label">Twitter</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="icon brands fa-github">
-                    <span className="label">Github</span>
+                  <a
+                    href={mainState.info.waLink}
+                    target="_blank"
+                    className="icon brands fa-whatsapp"
+                  >
+                    <span className="label">Whatsapp</span>
                   </a>
                 </li>
                 <li>
+                  <a
+                    href={mainState.info.github}
+                    target="_blank"
+                    className="icon brands fa-github"
+                  >
+                    <span className="label">Github</span>
+                  </a>
+                </li>
+                <li style={{ display: "none" }}>
                   <a href="#" className="icon brands fa-dribbble">
                     <span className="label">Dribbble</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="icon solid fa-envelope">
+                  <a
+                    href={`mailto:${mainState.info.email}`}
+                    className="icon solid fa-envelope"
+                  >
                     <span className="label">Email</span>
                   </a>
                 </li>
@@ -44,21 +63,16 @@ const main = {
         <div id="main" style={{ background: "black" }}>
           <section id="one">
             <header className="major">
-              <h2>
-                Ipsum lorem dolor aliquam ante commodo
-                <br />
-                magna sed accumsan arcu neque.
+              <h2 style={{ color: "rgb(20 188 197)" }}>
+                Digitalisasikan semua.
               </h2>
             </header>
-            <p>
-              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-              nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-              lobortis tortor primis integer massa adipiscing id nisi accumsan
-              pellentesque commodo blandit enim arcu non at amet id arcu magna.
-              Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-              vulputate lorem neque cubilia.
+            <p style={{ whiteSpace: "pre-wrap" }}>
+              {
+                "Pakuansoft adalah Penyedia Layanan Digital di Bogor.\n\nDigitalisasi menjadi sesuatu hal yang wajib bagi semua perusahaan saat ini. Bagaimana tidak, saat ini belanja bisa dilakukan secara online, belajar bisa dilakukan secara online juga, dan banyak hal lainnya yang bisa di lakukan secara online.\n\nMaka dari itu, Pakuansoft menawarkan jasa untuk melakukan digitalisasi, seperti pembuatan web, aplikasi internal, pembuatan aplikasi android atau hal hal lainnya yang berhubungan dengan teknologi.\n\nJasa yang kami tawarkan:\n-Pembuatan Aplikasi Web.\n-Pembuatan Aplikasi Mobile.\n-Pembuatan Aplikasi Desktop.\n-Bantuan atau kolaborasi untuk Pengembangan Aplikasi yang sedang berjalan."
+              }
             </p>
-            <ul className="actions">
+            <ul className="actions" style={{ display: "none" }}>
               <li>
                 <a href="#" className="button">
                   Learn More
@@ -67,70 +81,36 @@ const main = {
             </ul>
           </section>
           <section id="two">
-            <h2>Recent Work</h2>
+            <h2 style={{ color: "rgb(20 188 197)" }}>Pekerjaan Terbaru</h2>
             <div className="row">
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/01.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/01.jpg" alt="" />
-                </a>
-                <h3>Magna sed consequat tempus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/02.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/02.jpg" alt="" />
-                </a>
-                <h3>Ultricies lacinia interdum</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/03.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/03.jpg" alt="" />
-                </a>
-                <h3>Tortor metus commodo</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/04.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/04.jpg" alt="" />
-                </a>
-                <h3>Quam neque phasellus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/05.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/05.jpg" alt="" />
-                </a>
-                <h3>Nunc enim commodo aliquet</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article className="col-6 col-12-xsmall work-item">
-                <a
-                  href="theme/html5up-strata/images/fulls/06.jpg"
-                  className="image fit thumb"
-                >
-                  <img src="theme/html5up-strata/images/thumbs/06.jpg" alt="" />
-                </a>
-                <h3>Risus ornare lacinia</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
+              {mainState.info.recentWork.map(
+                ({ name, description, link, image }) => (
+                  <article className="col-6 col-12-xsmall work-item">
+                    <a
+                      href={image}
+                      className="image fit thumb"
+                      data-poptrox="iframe,800x480"
+                    >
+                      <img src={image} alt={name} />
+                    </a>
+                    <h3
+                      style={{ color: "rgb(20 188 197)", cursor: "pointer" }}
+                      onClick={() => {
+                        const a = document.createElement("a");
+                        a.href = link;
+                        a.target = "_blank";
+                        a.click();
+                        a.remove();
+                      }}
+                    >
+                      {name}
+                    </h3>
+                    <p>{description}</p>
+                  </article>
+                )
+              )}
             </div>
-            <ul className="actions">
+            <ul className="actions" style={{ display: "none" }}>
               <li>
                 <a href="#" className="button">
                   Full Portfolio
@@ -139,14 +119,15 @@ const main = {
             </ul>
           </section>
           <section id="three">
-            <h2>Get In Touch</h2>
+            <h2 style={{ color: "rgb(20 188 197)" }}>Hubungi Kami</h2>
             <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
+              Jika anda sedang mempertimbangkan Pakuansoft atau ingin informasi
+              lebih lanjut. Silahkan hubungi kami melalui informasi dibawah ini
+              (Whatsapp tersedia pada kontak tersebut). Kami sangat senang bisa
+              membantu.
             </p>
             <div className="row">
-              <div className="col-8 col-12-small">
+              <div className="col-8 col-12-small" style={{ display: "none" }}>
                 <form method="post" action="#">
                   <div className="row gtr-uniform gtr-50">
                     <div className="col-6 col-12-xsmall">
@@ -183,33 +164,31 @@ const main = {
               </div>
               <div className="col-4 col-12-small">
                 <ul className="labeled-icons">
-                  <li>
+                  <li style={{ whiteSpace: "pre-wrap" }}>
                     <h3 className="icon solid fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    1234 Somewhere Rd.
-                    <br />
-                    Nashville, TN 00000
-                    <br />
-                    United States
+                    {"KRR\nKabupaten Bogor\nJawa Barat\nIndonesia"}
                   </li>
                   <li>
                     <h3 className="icon solid fa-mobile-alt">
                       <span className="label">Phone</span>
                     </h3>
-                    000-000-0000
+                    {mainState.info.phone}
                   </li>
                   <li>
                     <h3 className="icon solid fa-envelope">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">hello@untitled.tld</a>
+                    <a href={`mailto:${mainState.info.email}`}>
+                      {mainState.info.email}
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
-          <section id="four">
+          <section id="four" style={{ display: "none" }}>
             <h2>Elements</h2>
 
             <section>
