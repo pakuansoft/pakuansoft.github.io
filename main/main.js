@@ -14,7 +14,10 @@ const main = {
               <strong>Pakuansoft</strong> Digitalisasikan semua.
             </h1>
           </div>
-          <footer id="footer">
+          <footer
+            id="footer"
+            style={{ backgroundImage: "none", backgroundColor: "rgb(7 67 70)" }}
+          >
             <div className="inner">
               <ul className="icons">
                 <li style={{ display: "none" }}>
