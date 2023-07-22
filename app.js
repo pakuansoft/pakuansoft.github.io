@@ -9,7 +9,7 @@
       </ReactRouterDOM.HashRouter>
     ),
   };
-  document.title = "Pakuansoft";
+  document.title = "Pakuansoft - Digitalisasikan Semua.";
   ReactDOM.render(<app.view />, document.getElementById("root"));
 
   var loadJS = function (url, location) {
