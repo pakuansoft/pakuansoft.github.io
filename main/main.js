@@ -8,7 +8,7 @@ const main = {
         >
           <div className="inner">
             <a href="#" className="image avatar">
-              <img src="image/logo.jpg" alt="" />
+              <img src="image/pakuansoft.png" alt="" />
             </a>
             <h1>
               <strong>Pakuansoft</strong> Digitalisasikan semua.
